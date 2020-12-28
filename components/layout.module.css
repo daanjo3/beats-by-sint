@@ -1,0 +1,36 @@
+.homepage_body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 30rem;
+  padding: 1rem 1rem;
+  margin: 0 auto 0;
+  align-content: center;
+}
+
+.quotedTextBlock {
+  font-style: italic;
+}
+
+.imageColumnLeft {
+  margin-left: 5rem;
+  max-width: 10rem;
+  display: flex;
+}
+
+.imageColumnRight {
+  margin-right: 5rem;
+  max-width: 10rem;
+  display: flex;
+}
+
+.formInput {
+  width: 100%;
+}
+
+.defaultImageSize {
+  width: 400px;
+}
