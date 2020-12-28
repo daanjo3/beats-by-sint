@@ -36,7 +36,6 @@ const QuestionIndex: NextPage = () => {
   }, [])
 
   const nextQuestion = () => {
-    console.log('NEXT BUTTON CLICKED');
     // Store the answer if valid
     if (currentAnswer === undefined || currentAnswer.value === '') {
       alert('Vul je antwoord in voordat je doorgaat!')
@@ -65,10 +64,12 @@ const QuestionIndex: NextPage = () => {
     questionContent = questions[questionId];
   }, [questionId])
 
-  return <Layout>
+  return (
+    <Layout>
       <QuestionComponent content={questionContent} callback={questionCallback}/>
       <button onClick={nextQuestion}>Next</button>
     </Layout>
+  )
 }
 
 export default QuestionIndex;
